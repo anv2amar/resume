@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : AMAR NATH VAID
+% Website: https://github.com/anv2amar/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-8pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}\\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\projectSubheading}[3]{
+  \item\small{
+    \textbf{#1}\textit{: #2}\textit{\hfill#3}
+  }
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-10pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-8pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\huge Amar Nath Vaid}} & 4000 SW 37th Blvd, Apt 433-C, Gainesville, FL-32608\\
+  \href{https://anv2amar.github.io}{anv2amar.github.io} & Email : \href{mailto:anv2amar@gmail.com}{anv2amar@gmail.com}\\
+ &  Mobile : +1 (929)-381-9654 \\
+\end{tabular*}\vspace{-8pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Florida}{Gainesville, FL}
+      {Master of Science in Computer Science;  GPA: 3.5}{Jan. 2017 -- Dec. 2018}
+      {\textbf{Coursework:} Algorithms, Advanced Data Structures, Computer Networks, Operating Systems}
+    \resumeSubheading
+      {Thapar Institute of Engineering and Technology}{Patiala, India}
+      {Bachelor of Engineering in Electronics and Communication;  GPA: 7.15/10.0}{Aug. 2013 -- July. 2017}
+      {}\vspace{-15pt}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+   {Java, C, C++, C\#, .NET, SQL, JavaScript, HTML, CSS, PHP, Git, Spring MVC, Python, Unity 3D, Android}\vspace{-8pt}
+
+ 
+%-----------PROJECTS-----------------
+\section{Projects}
+
+\resumeSubHeadingListStart
+	\projectSubheading
+      {Carter}{SQL, HTML, CSS, JavaScript, JSP}{2018}
+{\linebreak A web application to buy and sell used cars. A large database for the used cars was obtained from eBay. A buyer could browse through the advertisements posted by other sellers and obtain the results conforming to his/her requirements by applying various available filters which would use complex SQL
+queries to extract the desired tuples from the database. A platform for efficient communication between a buyer and seller was developed.}\vspace{-5pt}
+    \projectSubheading
+      {Care for her}{Unity 3D, C\#, Virtual Reality}{2018}
+\justifying{\linebreak A mobile application to spread awareness of maternity care and issues during puberty. Users could be educated of the causes, treatment and symptoms of common maternity problems and problems faced at the time of attaining puberty using the application in an interactive way with the help of Virtual Reality. Development was done in Unity 3D. Actions and interactive behaviors to application elements were scripted in MonoDevelop using C\#. 3D models were extracted from Turbosquid and Autodesk.}\vspace{-5pt}
+\projectSubheading
+      {MIPS Simulator}{Java}{2018}
+\justifying{\linebreak Implemented and designed a Petri Net simulator for MIPS Processor in Java which produces a disassembled output and a simulation trace for given line of instructions in machine language. Registers and data memory values were printed equivalent to input code.}\vspace{-5pt}
+     \projectSubheading
+      {FurnitureAR}{Android Application, Augmented Reality, Unity 3D, C\#}{2017}
+\justifying{\linebreak An application to display three-dimensional visualizations of home furnishing products which augments them in the real environment using marker-based augmented reality. Application was developed using Unity 3D and scripting was done using C\#.}\vspace{-5pt}
+    \projectSubheading
+      {Dynamic de Bruijn graphs for genome assembly}{C++}{2017}
+\justifying{\linebreak An application to display three-dimensional visualizations of home furnishing products which augments them in the real environment using marker-based augmented reality. Application was developed using Unity 3D and scripting was done using C\#.}\vspace{-5pt}
+    \projectSubheading
+      {Gator Seasons, a weather channel}{HTML, CSS, JavaScript, Spring MVC framework, SQL}{2017}
+\justifying{\linebreak A platform for predicting events like floods, storms, tornadoes, as well as weather, precipitation and humidity in an area in the United States using previous year weather data of the U.S. from 'NOAA'.}\vspace{-5pt}
+	\projectSubheading
+      {Huffman Encoder-Decoder}{Java}{2017}
+\justifying{\linebreak Using Huffman Coding and implementing 4-way cache optimized heap to encode and decode large data.}\vspace{-5pt}
+	\projectSubheading
+      {District Collector System}{Java}{2015}
+\justifying{\linebreak An implementation of various schemes in the field of health, sanitation, bank etc. for different districts in India.}\vspace{-5pt}
+   
+      
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \projectSubheading
+      {DKOP Labs Pvt. Ltd., India}{Software Engineer Intern}{April 2015 - July 2015}
+      \resumeItemListStart
+          {\item Programming and designing digital circuits using logic gates and ICs by carrying out simulation of the digital circuits using and C, Python and Verilog. Tested various data transfer protocols on digital circuits for master and slave devices.}   
+          {\item Designed and implemented the I2C communication protocol for a master device. Testing was done on an FPGA kit.}
+      \resumeItemListEnd
+
+    \projectSubheading
+      {AIESEC, India}{President}{Jan 2014 - Jan 2015}
+      \resumeItemListStart
+      {\item Mentored students for improving skills for better recruitments through various workshops
+and orientations.}
+      {\item Received award for best Organizing Committee President.}
+      \resumeItemListEnd
+
+    \projectSubheading
+      {UvSofts Tech Pvt. Ltd., India}{Summer Intern}{April 2014 - July 2014}
+      \resumeItemListStart
+    {\item Developed a DTMF controlled security system using an AVR microcontroller.}
+    {\item Programming for the embedded circuit was done in C language.}\vspace{-8pt}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+
+
+%-------------------------------------------
+\end{document}
